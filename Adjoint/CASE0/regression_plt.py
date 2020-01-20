@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # pyBeam, a Beam Solver
 #
@@ -41,7 +41,9 @@ beam.SetLoads(iNode,0,0,60000)  #
 
 beam.Run()
 
-beam.PrintDisplacements(iNode)
+beam.PrintSolution(iNode)
+
+beam.ComputeObjectiveFunction( iNode)
 
 coordinate_X = []
 coordinate_Y = []

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # pyBeam, a Beam Solver
 #
@@ -37,7 +37,7 @@ iNode = 21 - 1
 
 beam.ReadRestart()
 
-beam.SetLoads(iNode,0,0,100000)
+beam.SetLoads(iNode,0,0,60000)
 
 beam.StartRecording()
 
@@ -54,7 +54,3 @@ beam.StopRecording()
 beam.ComputeAdjoint()
 
 beam.PrintSensitivitiesAllLoads()
-
-success = beam.TestSensitivities( iNode, 1e-8, 0.0017035445423928379, - 0.0020190915772016127, - 1.4059868175534144e-05)
-
-exit(success)

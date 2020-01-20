@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # pyBeam, a Beam Solver
 #
@@ -39,9 +39,11 @@ iNode = 21 - 1
 
 beam.SetLoads(iNode,0,0,60000)  #
 
+beam.ReadRestart()
+
 beam.Restart()
 
-beam.PrintDisplacements(iNode)
+beam.PrintSolution(iNode)
 
 beam.ComputeObjectiveFunction( iNode)
 
