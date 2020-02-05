@@ -15,14 +15,6 @@ CEND
   NLPARM = 1  
   LOAD = 1
 BEGIN BULK
-$ ***************************************************************************
-$   Written by : Femap with NX Nastran
-$   Version    : 10.3.1
-$   Translator : MSC/MD Nastran
-$   From Model : E:\Adjoint_project\Validation\NASTRAN\pyBeam.modfem
-$   Date       : Mon Mar 11 14:16:09 2019
-$ ***************************************************************************
-$
 $       $       $       $       $       $       $       $       $   
 NLPARM         1      40            AUTO             200       W     YES+       
 +                           1.-7                                        +       
